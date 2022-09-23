@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    min-height: 100vh;
+    background: linear-gradient(90deg, rgba(46,44,45,1) 0%, rgba(66, 64, 67, 1) 100%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+header{
+    width: 100%;
+}
+#heading {
+    font-size: 3rem;
+    color: white;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+#drum_set {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 80%;
+    background: linear-gradient(145deg, #171717, #444245);
+    box-shadow: inset 2px 2px 0px #7d7c7e, inset -2px -2px 0px #1c1c1c;
+}
+
+.btn{
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    border: 4px #090909 solid;
+    border-radius: 50%;
+    font-size: 3rem;
+    outline: none;
+    color: wheat;
+    background: linear-gradient(145deg, #171717, #444245);
+    box-shadow: inset 2px 2px 0px #7d7c7e, inset -2px -2px 0px #1c1c1c;
+}
+
+@media (max-width: 835px) {
+    .btn {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+@media (max-width: 525px) {
+    #drum_set {
+        width: 90%;
+    }
+
+    .btn {
+        width: 80px;
+        height: 80px;
+    }
+
+}
+
+
+
+.btn:hover {
+    box-shadow: 5px 5px 5px -1px rgba(10, 99, 169, 0.16),inset -5px -5px 5px -1px rgba(255, 255, 255, 0.60);
+}
+
+#instruction {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 1.3rem;
+    color: wheat;
+}
