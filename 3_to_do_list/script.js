@@ -69,24 +69,3 @@ function deleteCheck(e) {
     }
 }
 
-// filter todo function
-function filterTodo(e) {
-    const todos = todoList.childNodes;
-    console.log(todos);
-    // todos.forEach(function(todo) {
-    //     console.log(e.target.value);
-    //     console.log(todo);
-    //     switch(e.target.value) {
-    //         case "all":
-    //             // todo.style.display = 'flex';
-    //             break;
-    //         case "completed":
-    //             if(todo.classList.contains('completed')) {
-    //                 todo.style.display = 'flex';
-    //             }
-    //             else {
-    //                 todo.style.display = 'none';
-    //             }
-    //     }
-    // })
-}
