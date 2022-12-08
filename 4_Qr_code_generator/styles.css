@@ -14,14 +14,18 @@ body {
 }
 
 .wrapper {
-    max-width: 400px;
+    max-width: 410px;
     /* height controlled later */
     height: 260px;  
     background: #fff;
     border-radius: 10px;
     padding: 16px 25px;
+    transition:  height 0.2s ease;
 }
 
+.wrapper.active {
+    height: 530px;
+}
 header h1 {
     font-size: 1.5rem;
     font-weight: 500;
@@ -73,7 +77,13 @@ header p {
     width: 200px;
 }
 
+.wrapper.active .qr-code {
+    opacity: 1;
+    pointer-events: auto;
+    transition: opacity 0.5s 0.05s ease;
+}
 
 
 /* ******** Dobuts ****** */
 /* 1. pointer-events ? */
+/* 2. transition (according height) */
